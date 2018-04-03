@@ -38,6 +38,9 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rdbBackStall = new System.Windows.Forms.RadioButton();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,12 +121,13 @@
             // 
             // grpSection
             // 
+            this.grpSection.Controls.Add(this.rdbBackStall);
             this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
             this.grpSection.Location = new System.Drawing.Point(52, 141);
             this.grpSection.Name = "grpSection";
-            this.grpSection.Size = new System.Drawing.Size(139, 111);
+            this.grpSection.Size = new System.Drawing.Size(139, 180);
             this.grpSection.TabIndex = 9;
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
@@ -138,11 +142,40 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Location = new System.Drawing.Point(366, 95);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(91, 20);
+            this.txtDiscount.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(304, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Discount";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // rdbBackStall
+            // 
+            this.rdbBackStall.AutoSize = true;
+            this.rdbBackStall.Location = new System.Drawing.Point(26, 116);
+            this.rdbBackStall.Name = "rdbBackStall";
+            this.rdbBackStall.Size = new System.Drawing.Size(73, 17);
+            this.rdbBackStall.TabIndex = 9;
+            this.rdbBackStall.Text = "Back Stall";
+            this.rdbBackStall.UseVisualStyleBackColor = true;
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtDiscount);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
             this.Controls.Add(this.chkDiscount);
@@ -172,6 +205,9 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.TextBox txtDiscount;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rdbBackStall;
     }
 }
 
